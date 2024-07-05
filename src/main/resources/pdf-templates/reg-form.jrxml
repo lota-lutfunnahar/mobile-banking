@@ -1,0 +1,475 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.16.0.final using JasperReports Library version 6.16.0-48579d909b7943b64690c65c71e07e0b80981928  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="RegistrationForm" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="0" uuid="2dd97bdf-fa9a-4eda-b718-09691277e0ee">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<parameter name="imagePathLogo" class="java.io.InputStream"/>
+	<parameter name="name" class="java.lang.String"/>
+	<parameter name="accountNo" class="java.lang.String"/>
+	<parameter name="mobileNo" class="java.lang.String"/>
+	<parameter name="photoIdNo" class="java.lang.String"/>
+	<parameter name="branchName" class="java.lang.String"/>
+	<parameter name="signatureImage" class="java.io.InputStream"/>
+	<parameter name="dateTime" class="java.util.Date"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="126">
+			<frame>
+				<reportElement x="-20" y="0" width="595" height="65" uuid="a3344d0e-712f-42c6-a765-05dd0d30a076"/>
+				<image hAlign="Center" vAlign="Middle">
+					<reportElement x="0" y="-5" width="111" height="70" uuid="d1831acc-3d67-47b7-a922-f62346c606bd"/>
+					<imageExpression><![CDATA[$P{imagePathLogo}]]></imageExpression>
+				</image>
+			</frame>
+			<staticText>
+				<reportElement x="10" y="80" width="35" height="18" forecolor="#000000" uuid="c5d9439b-c5c5-46e5-b523-bfbf52d40628">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font fontName="SolaimanLipi" size="13" isBold="false"/>
+				</textElement>
+				<text><![CDATA[তারিখ:
+
+বরাবর
+বাংলাদেশ কৃষি ব্যাংক
+…………………. শাখা
+……………………… ।
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="108" width="140" height="18" forecolor="#000000" uuid="7d890e62-dead-4f5b-8dfb-c0d3a22c2074"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="SolaimanLipi" size="13" isBold="false"/>
+				</textElement>
+				<text><![CDATA[বরাবর
+
+
+বরাবর
+বাংলাদেশ কৃষি ব্যাংক
+…………………. শাখা
+……………………… ।
+]]></text>
+			</staticText>
+			<textField pattern="yyyy-MM-dd">
+				<reportElement x="45" y="80" width="168" height="18" uuid="2019cfc6-fde3-411c-a999-7973994af59a"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[new Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="608" splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<staticText>
+				<reportElement x="10" y="20" width="25" height="18" forecolor="#000000" uuid="610fd51b-9fc1-49e4-9e76-2b0b79b8ecbb">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font fontName="SolaimanLipi" size="13" isBold="false"/>
+				</textElement>
+				<text><![CDATA[শাখা]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="36" width="140" height="18" forecolor="#000000" uuid="4eb92fb7-9903-43d9-bfc0-6df8fe071f9d"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="SolaimanLipi" size="13" isBold="false"/>
+				</textElement>
+				<text><![CDATA[........................... ।]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="0" width="140" height="18" forecolor="#000000" uuid="91536890-0f82-4d38-b605-d2da5ce171b2"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="SolaimanLipi" size="13" isBold="false"/>
+				</textElement>
+				<text><![CDATA[বাংলাদেশ কৃষি ব্যাংক
+
+বরাবর
+বাংলাদেশ কৃষি ব্যাংক
+…………………. শাখা
+……………………… ।
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="90" width="140" height="18" forecolor="#000000" uuid="b0053809-6151-48a9-87e5-aa125d2e2c18"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="SolaimanLipi" size="13" isBold="false"/>
+				</textElement>
+				<text><![CDATA[মহোদয়,
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="120" width="532" height="79" forecolor="#000000" uuid="a7335f2b-a89d-4173-b4c4-1feffbc69fd1"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="SolaimanLipi" size="13" isBold="false"/>
+				</textElement>
+				<text><![CDATA[আমি আপনার শাখার নিম্নলিখিত হিসাব/হিসাবসমূহ পরিচালনা করে আসছি। উক্ত হিসাবের/হিসাবমূহে ডিজিটাল লেনদেন চালুকরণ ও যে কোন লেনদেন সংঘঠিত হলে নিম্নবর্নিত মোবাইল নম্বরে SMS এর মাধ্যমে স্বংক্রিয়ভাবে তথ্য অবগত করানোর ব্যবস্থা গ্রহণের জন্য আবেদন করছি। এ প্রেক্ষিতে প্রয়োজনীয় তথ্যাদি নিম্নে প্রদান করা হলো। ব্যাংক কর্তৃক ধার্যকৃত ডিজিটাল ব্যাংকিং ও এসএমএস চার্জ এতদবিষয়ে গৃহীত সকল নিয়মাবলী মেনে চলার অঙ্গীকার করছি।]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="220" width="60" height="25" forecolor="#000000" uuid="79e3e07d-26b7-44f4-b3a2-ad3368379b3f">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="SolaimanLipi" size="13" isBold="false"/>
+				</textElement>
+				<text><![CDATA[০১]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="70" y="220" width="140" height="25" forecolor="#000000" uuid="90032ded-cd2c-49dc-8bbf-30905d168719">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="SolaimanLipi" size="13" isBold="false"/>
+				</textElement>
+				<text><![CDATA[ আবেদনকারীর নাম
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="70" y="245" width="140" height="58" forecolor="#000000" uuid="078ba717-6a1e-4dc8-aa46-9470751e8d6a">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="SolaimanLipi" size="13" isBold="false"/>
+				</textElement>
+				<text><![CDATA[ হিসাব নম্বর (১২/১৫ সংখ্যা)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="245" width="60" height="58" forecolor="#000000" uuid="63a456c7-2e03-4351-ba2d-2e9178af714e">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="SolaimanLipi" size="13" isBold="false"/>
+				</textElement>
+				<text><![CDATA[০২]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="70" y="303" width="140" height="39" forecolor="#000000" uuid="5cb687b1-0662-4b4d-a17b-91cc16f399c0">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="SolaimanLipi" size="13" isBold="false"/>
+				</textElement>
+				<text><![CDATA[ মোবাইল নম্বর (নিজ নামে  
+ নিবন্ধিত SIM)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="303" width="60" height="39" forecolor="#000000" uuid="af41868d-109a-434d-b801-0caf0ceec606">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="SolaimanLipi" size="13" isBold="false"/>
+				</textElement>
+				<text><![CDATA[০৩]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="342" width="60" height="25" forecolor="#000000" uuid="06aacb86-665c-4eb6-b231-9a8fa6b54561">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="SolaimanLipi" size="13" isBold="false"/>
+				</textElement>
+				<text><![CDATA[০৪]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="70" y="342" width="140" height="25" forecolor="#000000" uuid="876055e5-19ac-495e-8b7c-00fe6a5159e1"/>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="SolaimanLipi" size="13" isBold="false"/>
+				</textElement>
+				<text><![CDATA[ NID  নম্বর]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="401" y="381" width="140" height="18" forecolor="#000000" uuid="efddd879-9ec7-4ba1-a148-95aa7b79c8dd"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="SolaimanLipi" size="13" isBold="false"/>
+				</textElement>
+				<text><![CDATA[ আপনার বিশ্বস্ত]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="55" y="513" width="100" height="18" forecolor="#000000" uuid="680148cb-86d3-493e-9869-813b93aebc75"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="SolaimanLipi" size="13" isBold="false"/>
+				</textElement>
+				<text><![CDATA[আঙ্গুলের ছাপ / ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="330" y="469" width="214" height="18" forecolor="#000000" uuid="b68b089e-a408-4d85-b73e-c38a98ee7586"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="SolaimanLipi" size="13" isBold="false"/>
+				</textElement>
+				<text><![CDATA[স্বাক্ষরঃ ......................................]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="320" y="497" width="224" height="18" forecolor="#000000" uuid="62851baf-2f02-43b1-8d72-30330c518827"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="SolaimanLipi" size="13" isBold="false"/>
+				</textElement>
+				<text><![CDATA[ নামঃ ..........................................]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="576" width="290" height="18" forecolor="#000000" uuid="c92d4844-6e37-4f79-9604-90b4fece306d"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="SolaimanLipi" size="13" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Name, Account Number, Signature verified
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="542" width="534" height="32" forecolor="#000000" uuid="ddd49447-181d-46cf-995c-e0135448efe8"/>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="SolaimanLipi" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[শাখা কর্তৃক পূরণীয়]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="60" width="540" height="18" forecolor="#000000" uuid="bbc3aa22-d8f2-4a5f-a850-3e984ab9ce5f"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="SolaimanLipi" size="13" isBold="true"/>
+				</textElement>
+				<text><![CDATA[বিষয়:  ডিজিটাল ব্যাংকিং ও লেনদেনের তথ্য SMS এর মাধ্যেমে স্বয়ংক্রিয়ভাবে পাওয়ার আবেদন। 
+]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="219" y="220" width="322" height="25" uuid="b4fab198-6976-4c79-88b5-c952642b8642">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#FFFFFF"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$P{name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="250" y="245" width="291" height="29" uuid="626762d3-8432-4f13-a5de-3a9837e451f5">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#FFFFFF"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$P{accountNo}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="210" y="245" width="41" height="57" forecolor="#000000" uuid="ccdb228d-6350-451d-9eea-a1307445b2fa">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="SolaimanLipi" size="13" isBold="false"/>
+				</textElement>
+				<text><![CDATA[(১)
+
+(২)]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="219" y="303" width="322" height="39" uuid="0c2c3598-4b38-487f-9668-a4abe94ac092">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#FFFFFF"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$P{mobileNo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="219" y="342" width="322" height="25" uuid="cb1e05e7-0359-41b1-b959-ecc6085e8164">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#FFFFFF"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$P{photoIdNo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="35" y="21" width="280" height="16" uuid="672ee1c4-762b-4e66-97c8-4613a5b3a03b"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$P{branchName}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="251" y="274" width="290" height="29" forecolor="#000000" uuid="8bc459bb-176e-4b8d-90d6-3dabe4b4d724">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#FFFFFF"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#FFFFFF"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="SolaimanLipi" size="13" isBold="false"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="210" y="220" width="10" height="25" forecolor="#000000" uuid="7927adb0-f4b8-4336-aefe-824e39d25d14">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="SolaimanLipi" size="13" isBold="false"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="210" y="303" width="10" height="39" forecolor="#000000" uuid="47801e51-9bc9-4a14-9133-b8d87a1c317c">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="SolaimanLipi" size="13" isBold="false"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="382" width="180" height="130" forecolor="#000000" uuid="d07adc82-2531-4abf-8e01-a8403edff8e0">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="SolaimanLipi" size="13" isBold="false"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<image hAlign="Center" vAlign="Middle">
+				<reportElement x="330" y="409" width="212" height="50" uuid="7062d467-37bf-4f7a-97e7-5ccc890b5f1e"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<imageExpression><![CDATA[$P{signatureImage}]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="210" y="342" width="10" height="25" forecolor="#000000" uuid="8b6bce6b-8920-4e4f-9892-d158bbbc5939">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="SolaimanLipi" size="13" isBold="false"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<pageFooter>
+		<band height="88">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<staticText>
+				<reportElement x="20" y="26" width="150" height="32" forecolor="#000000" uuid="1c61fe90-4d17-4afd-a1dc-98ffe3d443f3"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="SolaimanLipi" size="13" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Seal and Signature of 
+Authorized Officer]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="370" y="26" width="150" height="32" forecolor="#000000" uuid="f720df10-40d7-428f-ae8d-dd95ddf8220b"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="SolaimanLipi" size="13" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Seal and Signature of 
+Manager]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+</jasperReport>

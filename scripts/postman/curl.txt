@@ -1,0 +1,4 @@
+curl --request GET \
+  --url http://172.16.7.17:8081/v1/accounts/0200008617565/2321321321 \
+  --header 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiTWFuYWdlciIsIm5hbWUiOiJLb3dzYXIifQ.63CmrWIePNZvhnxNjPi2SSvBRQa0b5XwMVyisTITGmE' \
+  --header 'content-type: application/json'

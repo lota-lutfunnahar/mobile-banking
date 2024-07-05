@@ -1,0 +1,62 @@
+{
+	"id": "1540667b-fbed-bb27-3489-be78f32e4fa9",
+	"name": "RPET",
+	"description": "",
+	"order": [
+		"d02b6c15-2964-09f1-8b51-e7d0c02b11c3"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1577792857447,
+	"owner": "6578921",
+	"public": false,
+	"requests": [
+		{
+			"id": "d02b6c15-2964-09f1-8b51-e7d0c02b11c3",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8081/rpet/v1/accounts/020000867777",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "1540667b-fbed-bb27-3489-be78f32e4fa9",
+			"data": [
+				{
+					"key": "email",
+					"value": "hridoy.bubd@gmail.com",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "password",
+					"value": "1234",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"name": "RPRT_AccountInfo_V1",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1577789869303,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"isFromCollection": true,
+			"collectionRequestId": "f9b42367-f3cf-23f5-5c20-46502fb6568f"
+		}
+	]
+}

@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.6.0.final using JasperReports Library version 6.6.0  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="AgentStatement" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="0" uuid="2dd97bdf-fa9a-4eda-b718-09691277e0ee">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<parameter name="imagePathLogo" class="java.io.InputStream"/>
+	<parameter name="fromAccountType" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="fromAccountNo" class="java.lang.String"/>
+	<parameter name="toAccountTitle" class="java.lang.String"/>
+	<parameter name="fromAccountTitle" class="java.lang.String"/>
+	<parameter name="toAccountBranchName" class="java.lang.String"/>
+	<parameter name="fromAccountBranchName" class="java.lang.String"/>
+	<parameter name="transferAmount" class="java.lang.String"/>
+	<parameter name="charge" class="java.lang.String"/>
+	<parameter name="vat" class="java.lang.String"/>
+	<parameter name="tranxTime" class="java.util.Date"/>
+	<parameter name="totalAmount" class="java.lang.String"/>
+	<parameter name="tranxId" class="java.lang.String"/>
+	<parameter name="remarks" class="java.lang.String"/>
+	<parameter name="toAccountType" class="java.lang.String"/>
+	<parameter name="toAccountNo" class="java.lang.String"/>
+	<parameter name="qrCodeUrl" class="java.lang.String"/>
+	<parameter name="imageDone" class="java.io.InputStream"/>
+	<parameter name="vatPaisha" class="java.lang.String"/>
+	<parameter name="chargePaisha" class="java.lang.String"/>
+	<parameter name="totalAmountPaisha" class="java.lang.String"/>
+	<parameter name="transferAmountPaisha" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="126">
+			<frame>
+				<reportElement x="-20" y="0" width="595" height="65" uuid="a3344d0e-712f-42c6-a765-05dd0d30a076"/>
+				<rectangle>
+					<reportElement x="0" y="-20" width="595" height="80" backcolor="#E4ECE4" uuid="e82f884c-21d8-4006-8726-4201a16ea7f0"/>
+					<graphicElement>
+						<pen lineWidth="0.5" lineColor="#D1D1D1"/>
+					</graphicElement>
+				</rectangle>
+				<image hAlign="Center" vAlign="Middle">
+					<reportElement x="120" y="-5" width="371" height="50" uuid="d1831acc-3d67-47b7-a922-f62346c606bd"/>
+					<imageExpression><![CDATA[$P{imagePathLogo}]]></imageExpression>
+				</image>
+			</frame>
+			<staticText>
+				<reportElement x="166" y="69" width="364" height="14" forecolor="#008000" backcolor="#FFFFFF" uuid="131ec04f-deab-4b96-9f30-193380f5271a"/>
+				<textElement verticalAlignment="Top">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[9/D Dilkusha Commercial Area, Dhaka - 1000, Bangladesh]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="92" y="69" width="100" height="14" uuid="43823696-9f53-484f-9198-1c50b195f4e3"/>
+				<textElement verticalAlignment="Top">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Head Office :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="70" y="86" width="292" height="14" forecolor="#008000" backcolor="#FFFFFF" uuid="a3337775-7af4-4b4b-a38b-175129e62b7c"/>
+				<textElement verticalAlignment="Top">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[(880-2) 9566153-54,9566160-69,9566074-75]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="22" y="86" width="100" height="14" uuid="11397277-fade-4f09-b2a1-9c5cada5739a"/>
+				<textElement verticalAlignment="Top">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Phone :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="339" y="86" width="100" height="14" uuid="643db888-a993-4ac5-b73f-2465646f0ee3"/>
+				<textElement verticalAlignment="Top">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Fax :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="369" y="86" width="183" height="14" forecolor="#008000" backcolor="#FFFFFF" uuid="5234c5b8-0afb-40aa-ad50-0954ffae67aa"/>
+				<textElement verticalAlignment="Top">
+					<font fontName="SansSerif" size="12"/>
+				</textElement>
+				<text><![CDATA[(+8802) 956 2346,956 3662]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="184" y="101" width="100" height="14" uuid="563e0b6d-4952-49ff-9a84-8a38f6f513a9"/>
+				<textElement verticalAlignment="Top">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Email :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="227" y="101" width="230" height="14" forecolor="#008000" backcolor="#FFFFFF" uuid="62f5db9a-588d-4658-b42e-51f6e61f506f"/>
+				<textElement verticalAlignment="Top">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[agrani@agranibank.org]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="506" splitType="Stretch">
+			<rectangle>
+				<reportElement key="" stretchType="ElementGroupHeight" mode="Opaque" x="15" y="0" width="525" height="490" forecolor="#BFBFBF" backcolor="#F9F9F9" uuid="d6041d64-6d40-48e5-a24e-a1b60155b1b9"/>
+				<graphicElement>
+					<pen lineWidth="1.5" lineStyle="Solid" lineColor="#F9F9F9"/>
+				</graphicElement>
+			</rectangle>
+			<textField isBlankWhenNull="true">
+				<reportElement x="56" y="123" width="192" height="18" forecolor="#6E6E6E" uuid="a576b002-8a0e-4c53-a9c7-6fe534dbc31e"/>
+				<textElement verticalAlignment="Middle">
+					<font size="14" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{fromAccountType}.substring(0, 1).toUpperCase()+$P{fromAccountType}.substring(1, $P{fromAccountType}.length()).toLowerCase()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="56" y="109" width="140" height="14" forecolor="#6E6E6E" uuid="0349cb33-4788-4da3-b54b-9c25cbc6a441"/>
+				<textElement verticalAlignment="Middle">
+					<font size="10" isBold="false"/>
+				</textElement>
+				<text><![CDATA[(From Account)]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="180" y="123" width="120" height="18" uuid="c5c6ab6b-ccef-4b55-ba85-fcdc01158674"/>
+				<textElement verticalAlignment="Middle">
+					<font size="14" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{fromAccountNo}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="160" y="123" width="20" height="18" forecolor="#6E6E6E" uuid="fb491650-0aa0-46ac-b0a6-52397eb2d2e7"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="14" isBold="false"/>
+				</textElement>
+				<text><![CDATA[-]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="56" y="141" width="252" height="18" forecolor="#6E6E6E" uuid="1da169b3-9a7f-4795-9c34-b92dd529f738"/>
+				<textElement verticalAlignment="Middle">
+					<font size="14" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{fromAccountTitle}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="56" y="159" width="251" height="18" forecolor="#6E6E6E" uuid="5df04452-c816-4c52-82ba-a25ae8dc8d8a"/>
+				<textElement verticalAlignment="Middle">
+					<font size="11" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{fromAccountBranchName}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="56" y="221" width="192" height="18" forecolor="#6E6E6E" uuid="73ba85b4-814e-4b9c-9986-616943082189"/>
+				<textElement verticalAlignment="Middle">
+					<font size="14" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{toAccountType}.substring(0, 1).toUpperCase()+$P{toAccountType}.substring(1, $P{toAccountType}.length()).toLowerCase()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="56" y="207" width="140" height="14" forecolor="#6E6E6E" uuid="3385cbae-ff71-400c-8a75-6507c42996c6"/>
+				<textElement verticalAlignment="Middle">
+					<font size="10" isBold="false"/>
+				</textElement>
+				<text><![CDATA[(To Account)]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="180" y="221" width="120" height="18" uuid="85241b32-8cab-4dad-933f-8ec79448d632"/>
+				<textElement verticalAlignment="Middle">
+					<font size="14" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{toAccountNo}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="160" y="221" width="20" height="18" forecolor="#6E6E6E" uuid="bf2842bd-1b43-4e4d-a0fa-90274f95a62a"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="14" isBold="false"/>
+				</textElement>
+				<text><![CDATA[-]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="56" y="239" width="252" height="18" forecolor="#6E6E6E" uuid="d205b881-7fb5-45fb-b8e2-c4f99c606ccd"/>
+				<textElement verticalAlignment="Middle">
+					<font size="14" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{toAccountTitle}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="56" y="257" width="252" height="18" forecolor="#6E6E6E" uuid="7a1c02e5-025c-4eb1-bef1-ff036182e610"/>
+				<textElement verticalAlignment="Middle">
+					<font size="11" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{toAccountBranchName}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="40" y="287" width="165" height="18" forecolor="#008000" uuid="cb3b1fe2-58f9-46e8-8042-28b87aa3cd33"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="SolaimanLipi" size="13" isBold="false"/>
+				</textElement>
+				<text><![CDATA[৩. ট্রান্সফার পরিমাণ (টাকা): ]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="354" y="296" width="127" height="25" uuid="6d437678-93d6-4045-9843-34aef4cc056f"/>
+				<textElement textAlignment="Right" verticalAlignment="Bottom">
+					<font fontName="SolaimanLipi" size="15" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{transferAmount}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="310" y="323" width="50" height="18" forecolor="#6E6E6E" uuid="e31c369a-1edb-4bc5-a661-c00055231f3f"/>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="SolaimanLipi" size="11"/>
+				</textElement>
+				<text><![CDATA[চার্জ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="310" y="343" width="49" height="18" forecolor="#6E6E6E" uuid="947016fe-25c9-44a6-9353-97e87dfd2002"/>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="SolaimanLipi" size="11"/>
+				</textElement>
+				<text><![CDATA[ভ্যাট]]></text>
+			</staticText>
+			<line>
+				<reportElement x="289" y="363" width="220" height="1" forecolor="#CFCDCC" uuid="e68bdabc-15b6-4efb-8bf0-d457996358ac"/>
+			</line>
+			<staticText>
+				<reportElement x="310" y="364" width="60" height="20" forecolor="rgba(0, 0, 0, 0.6784314)" uuid="c779822c-6606-431c-93b9-9b5228a1d92a"/>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="SolaimanLipi" size="14"/>
+				</textElement>
+				<text><![CDATA[মোট]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="361" y="323" width="120" height="18" forecolor="rgba(0, 0, 0, 0.7647059)" uuid="6aa6fe19-6e79-4d38-8d02-fe1963c9197d"/>
+				<textElement textAlignment="Right" verticalAlignment="Bottom">
+					<font fontName="SolaimanLipi" size="13" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{charge}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="361" y="343" width="120" height="18" forecolor="rgba(0, 0, 0, 0.7647059)" uuid="1651ac0e-3c89-4f38-9e82-f70059826f1c"/>
+				<textElement textAlignment="Right" verticalAlignment="Bottom">
+					<font fontName="SolaimanLipi" size="13" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{vat}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="354" y="364" width="127" height="20" forecolor="rgba(0, 0, 0, 0.7647059)" uuid="5c212b8a-a20f-4e84-8213-62dda15ce5e8"/>
+				<textElement textAlignment="Right" verticalAlignment="Bottom">
+					<font fontName="SolaimanLipi" size="15" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{totalAmount}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="44" y="387" width="140" height="18" forecolor="#008000" uuid="2f259e62-2da9-4016-8287-3d431fcbd647"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="SolaimanLipi" size="13" isBold="false"/>
+				</textElement>
+				<text><![CDATA[৪. ট্রান্সফার রেফারেন্স:]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="60" y="423" width="275" height="18" forecolor="#6E6E6E" uuid="c0d55be4-28be-4eab-9983-cd00a67cf568"/>
+				<textElement verticalAlignment="Middle">
+					<font size="14" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{remarks}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement key="staticText-1" x="0" y="58" width="555" height="18" forecolor="#6B6B6B" uuid="27abe963-b478-4ae4-aa9b-1a54dc67cd8a"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[(Fund Transfer Receipt)]]></text>
+			</staticText>
+			<image hAlign="Center" vAlign="Middle">
+				<reportElement isPrintRepeatedValues="false" mode="Transparent" x="248" y="3" width="59" height="38" forecolor="#000000" backcolor="#FFFFFF" uuid="529c4147-0403-487a-ba97-b718a7de3668"/>
+				<box>
+					<pen lineWidth="0.0"/>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<imageExpression><![CDATA[$P{imageDone}]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="40" y="91" width="140" height="18" forecolor="#008000" uuid="1a09594d-48a9-4473-8c23-ebb23c3ea799"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="SolaimanLipi" size="13" isBold="false"/>
+				</textElement>
+				<text><![CDATA[১. প্রেরক অ্যাকাউন্ট: ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="14" y="39" width="525" height="24" forecolor="#0E8726" backcolor="#FFFFFF" uuid="5357c932-9962-4148-9520-3759a71dbb14"/>
+				<textElement textAlignment="Center">
+					<font fontName="SolaimanLipi" size="18"/>
+				</textElement>
+				<text><![CDATA[ফান্ড ট্রান্সফার রশিদ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="40" y="189" width="140" height="18" forecolor="#008000" uuid="8ac10ab3-0804-40ee-b8fb-7e828fa8ca11"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="SolaimanLipi" size="13" isBold="false"/>
+				</textElement>
+				<text><![CDATA[২. প্রাপক অ্যাকাউন্ট:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="56" y="306" width="140" height="14" forecolor="#6E6E6E" uuid="8357805c-e94e-4b39-a7f7-e9d8b869bc5f"/>
+				<textElement verticalAlignment="Top">
+					<font size="10" isBold="false"/>
+				</textElement>
+				<text><![CDATA[(Transfer Amount)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="60" y="405" width="143" height="18" forecolor="#6E6E6E" uuid="44f04386-98d9-497f-a75c-4d6b8102cbcc"/>
+				<textElement verticalAlignment="Middle">
+					<font size="10" isBold="false"/>
+				</textElement>
+				<text><![CDATA[(Transfer Reference)]]></text>
+			</staticText>
+			<line>
+				<reportElement x="40" y="82" width="475" height="1" isPrintInFirstWholeBand="true" forecolor="#C2C2C2" uuid="ed132e54-8008-4f65-84b3-e5a5067f9677"/>
+			</line>
+			<textField>
+				<reportElement x="481" y="295" width="51" height="25" uuid="2bd2ec1c-1e7e-475d-abec-cda52aa914bd"/>
+				<textElement textAlignment="Left" verticalAlignment="Bottom">
+					<font fontName="SolaimanLipi" size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{transferAmountPaisha}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="481" y="363" width="51" height="20" uuid="eddfb801-16fa-4e4a-9413-92633aae5004"/>
+				<textElement textAlignment="Left" verticalAlignment="Bottom">
+					<font fontName="SolaimanLipi" size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{totalAmountPaisha}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="481" y="342" width="51" height="18" uuid="8c8b68a9-b11a-480f-9e01-efe856f29a42"/>
+				<textElement textAlignment="Left" verticalAlignment="Bottom">
+					<font fontName="SolaimanLipi" size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{vatPaisha}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="481" y="322" width="51" height="18" uuid="4380e0d2-b788-4a65-b607-dc78c5c4c21c"/>
+				<textElement textAlignment="Left" verticalAlignment="Bottom">
+					<font fontName="SolaimanLipi" size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{chargePaisha}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<pageFooter>
+		<band height="60">
+			<rectangle>
+				<reportElement x="-20" y="0" width="595" height="60" backcolor="#E4ECE4" uuid="b6b79fff-5b40-4013-9163-d80fe4193cb4"/>
+				<graphicElement>
+					<pen lineWidth="0.5" lineStyle="Solid" lineColor="#D1D1D1"/>
+				</graphicElement>
+			</rectangle>
+			<staticText>
+				<reportElement x="144" y="20" width="150" height="20" uuid="fc9e72ff-010c-41e9-99ed-74bc11aea5cf"/>
+				<textElement textAlignment="Center">
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[Powered By -]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="248" y="20" width="150" height="20" forecolor="#007CC3" uuid="6310372a-2f0c-4708-9d95-85e83da402f8"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[CELLOSCOPE]]></text>
+			</staticText>
+			<line>
+				<reportElement x="-20" y="58" width="595" height="1" backcolor="#CFC6C6" uuid="0a2f7287-1cf9-4b2f-8090-2eaa7143209e"/>
+				<graphicElement>
+					<pen lineWidth="4.0" lineColor="#BDB3B3"/>
+				</graphicElement>
+			</line>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="114">
+			<rectangle>
+				<reportElement x="44" y="0" width="465" height="114" backcolor="#E4ECE4" uuid="547c11c1-03a8-44a5-844a-cabd97229873"/>
+				<graphicElement>
+					<pen lineWidth="0.5" lineColor="#D1D1D1"/>
+				</graphicElement>
+			</rectangle>
+			<staticText>
+				<reportElement key="staticText-1" x="64" y="13" width="133" height="20" forecolor="#008000" uuid="baf0aec9-4d08-4a8c-a0e1-b1d38031107d"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="SolaimanLipi" size="14" isBold="false"/>
+				</textElement>
+				<text><![CDATA[ট্রান্সফার সময়:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-1" x="64" y="57" width="246" height="20" forecolor="#008000" uuid="7032029e-2947-4c04-8680-30b5be267e50"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="SolaimanLipi" size="14" isBold="false"/>
+				</textElement>
+				<text><![CDATA[নিশ্চিতকরণ রেফারেন্স:]]></text>
+			</staticText>
+			<textField pattern="MMM d, yyyy h:mm:ss a" isBlankWhenNull="true">
+				<reportElement x="64" y="36" width="334" height="18" forecolor="#6E6E6E" uuid="c4ca72db-e480-4dbc-aa45-2f112104a1b1"/>
+				<textElement verticalAlignment="Middle">
+					<font size="14" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[(new SimpleDateFormat("dd MMMM, YYYY      hh:mm:ss aaa").format($P{tranxTime}))]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="64" y="79" width="334" height="18" forecolor="#6E6E6E" uuid="ae1be526-4eaa-4768-84e1-e85f8ad5e2f4"/>
+				<textElement verticalAlignment="Middle">
+					<font size="14" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{tranxId}]]></textFieldExpression>
+			</textField>
+			<componentElement>
+				<reportElement x="411" y="16" width="80" height="80" uuid="020edc07-c37b-45fa-bdd2-64fd11002ad1"/>
+				<jr:QRCode xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd">
+					<jr:codeExpression><![CDATA[$P{qrCodeUrl}]]></jr:codeExpression>
+				</jr:QRCode>
+			</componentElement>
+		</band>
+	</summary>
+</jasperReport>

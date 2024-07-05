@@ -1,0 +1,7 @@
+package net.celloscope.api.securityQuestion.application.port.out;
+
+import net.celloscope.api.securityQuestion.adapter.out.persistence.entity.SecurityQuestionVerificationTrailJpaEntity;
+
+public interface SaveSecurityQuestionVerificationTrailPort {
+   SecurityQuestionVerificationTrailJpaEntity saveSecurityQuestionVerificationTrail(SecurityQuestionVerificationTrailJpaEntity securityQuestionVerifiacationTralJpaEntity);
+}
